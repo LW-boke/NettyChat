@@ -16,6 +16,7 @@
 package club.studycode;
 
 import club.studycode.netty.NettyHttpBootstrap;
+import lombok.extern.slf4j.Slf4j;
 
 
 /**
@@ -24,6 +25,7 @@ import club.studycode.netty.NettyHttpBootstrap;
  * @Date: 2019/12/11 13:45
  * @Description: Netty服务启动类
  */
+@Slf4j
 public class NettyServer {
     public static void main(String[] args) {
         NettyHttpBootstrap.start("localhost", 8080);
